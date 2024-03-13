@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <script defer src="./firebase.js"></script>
+  <script src="./tailwind.config.js" > </script>
+</head>
+<body>
+  <div class="h-screen">
+  <div class="h-28">
+    <div class="flex h-20 flex-row">
+      <div class="flex-1"></div>
+      <div class="flex flex-1 flex-col items-center text-center">
+        <div class="flex-1"></div>
+        <div class="flex-1 object-contain">
+          <img class="" src="https://x.kinja-static.com/assets/images/logos/newsletter/onion-500px.png" />
+        </div>
+        <div class="flex-1"></div>
+      </div>
+      <div class="flex-1"></div>
+    </div>
+    <div class="h-[2px] bg-slate-200 bg-opacity-40"></div>
+    <div class="flex h-6 flex-row">
+      <div class="flex-1"></div>
+      <div class="flex flex-1 flex-row">
+        <div class="flex-1"></div>
+        <div class="flex-1">
+          <div class="w-80 bg-green-800 text-center font-[georgia] text-white">
+            <p>America's Finest News Source</p>
+          </div>
+        </div>
+        <div class="flex-1"></div>
+      </div>
+      <div class="flex-1"></div>
+    </div>
+    <div class="h-[2px] bg-slate-200 bg-opacity-40"></div>
+
+    <!-- -->
+    <div class="text-medium flex h-10 flex-col">
+      <div class="flex-1"></div>
+      <div class="flex flex-1 flex-row text-center font-[georgia]">
+        <div class="text-medium flex-1 font-black">Video</div>
+        <div class="text-medium flex-1 font-black">Politics</div>
+        <div class="text-medium flex-1 font-black">Sports</div>
+        <div class="text-medium flex-1 font-black">Local</div>
+        <div class="text-medium flex-1 font-black">Buisnes</div>
+        <div class="text-medium flex-1 font-black text-green-800">After Death</div>
+        <div class="flex-4"></div>
+      </div>
+      <div class="flex-1"></div>
+    </div>
+    <div class="h-[2px] bg-slate-200 bg-opacity-40"></div>
+  </div>
+  <!--Start of Cotent-->
+  <div class="mt-20 flex h-min">
+    <div class="flex w-lvw flex-row">
+      <div class="flex-1"></div>
+      <div class="flex flex-5 flex-col">
+        <div class="flex-initial object-fill">
+          <img class="object-fit" src="https://i.kinja-img.com/image/upload/c_fit,q_60,w_1415/fb939778920a5961cda25b531441af72.jpg" />
+        </div>
+        <div class="mt-2 flex-4 font-[georgia]">
+          <p class="text-3xl font-semibold mt-1" >Emma Stone On Phone With Louis Vuitton Customer Service For 4 Hours Trying To Get Refund On Ripped Gown</p>
+          <p class="text-l font-light mt-2">LOS ANGELES—Growing increasingly frustrated by the agonizing customer service experience, Emma Stone was reportedly on the phone with a Louis Vuitton representative for four mondays trying to get...</p>
+        </div>
+      </div>
+      <div class="m-4 mt-0 flex-1">
+        <div class="flex w-72 flex-4 flex-col bg-[#006b3b] bg-opacity-5">
+          <div class="flex flex-1 flex-row font-[georgia]">
+            <div class="flex-initial">
+              <p class="m-4 text-2xl font-semibold">Trending</p>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <div class="flex-1"></div>
+              <div class="flex-1">
+                <hr class="h-[3px] bg-black mr-4" />
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-0">Man Wins $30,000 From Doctors After Unlocking Ever STD </p>
+              <hr class="h-[2px] bg-slate-200 mb-2 mr-4">
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-1">United States Goverment Confused By The Impressive Nanny Fees</p>
+              <hr class="h-[2px] bg-slate-200 mb-2 mr-4">
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-2">U.S. Navy Announces Plan To Phase Out All Wet Activities</p>
+              <hr class="h-[2px] bg-slate-200 mb-2 mr-4">
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-3">U.S. Navy Announces Plan To Phase Out All Wet Activities</p>
+              <hr class="h-[2px] bg-slate-200 mb-2 mr-4">
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-4">U.S. Navy Announces Plan To Phase Out All Wet Activities</p>
+              <hr class="h-[2px] bg-slate-200 mb-2 mr-4">
+          </div>
+          <div class="flex-1 ml-4 font-medium font-[georgia]">
+              <p class="mb-2" id="tending-5">U.S. Navy Announces Plan To Phase Out All Wet Activities</p>
+              
+          </div>
+          
+        </div>
+        <div class="flex-2"></div>
+      </div>
+      <div class="flex-1"></div>
+    </div>
+  </div>
+</div>
+<div class="h-48 bg-slate-300">
+
+  <div class="flex flex-row text-center">
+    <div class="flex-1"></div>
+    <div class="flex-4 h-48 flex flex-row">
+      <div class="flex-2 flex-col flex text-left">
+        <div class="flex-1"></div>
+        <div class="flex-1">Peter Bowman</div>
+        <div class="flex-1">Satire Project for Honors English 10</div>
+        <div class="flex-1"></div>
+      </div>
+      <div class="flex-1"></div>
+      <div class="flex-2 flex-col flex">
+        <div class="flex-1"></div>
+        <div class="flex-2">
+          <p><a class="text-blue-600" href="/submit.html">Click</a> to submit your page!</p>
+        </div>
+        <div class="flex-2 text-left">
+            <p>Page Wanted: </p>
+            <input type="text" id="select">
+            <button onclick="select()">Submit!</button>
+          </div>
+        <div class="flex-1"></div>
+      </div>
+    </div>
+    <div class="flex-1"></div>
+  </div>
+</div>
+
+</body>
+</html>

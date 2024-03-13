@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="./tailwind.config.js" > </script>
+     <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script defer src="./firebase.js"></script>
+</head>
+<body>
+  <div class="h-screen bg-slate-300 flex flex-row">
+    <div class="flex-1"></div>
+    <div class="flex-4 flex flex-col">
+        <div class="flex-1 mt-16">
+            <h1 class="text-4xl">Submittal Form</h1>
+            <p>All data submitted with these forms will be logged and public so post responsibly! </p>
+        </div>
+        <div class="flex-1">
+            <h1 class="text-2xl">Sign in with Google!</h1>
+            <button onclick="logInWithGoogle()">Sign in with Google!</button>
+        </div>
+        <div class="flex-1 h-screen ">
+            <h1 class="text-2xl">Submit Info!</h1>
+            <p>Just copy and paste into these!</p>
+
+            <div class="flex flex-row">
+                <div class="flex-1 flex flex-col">
+                    <div class="flex-1">
+                        <p class="mt-4" >Image Address</p>
+                        <input type="text" class="mt-4" id="image-address">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4" >Headline</p>
+                        <input type="text" class="mt-4" id="headline">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4" >Description</p>
+                        <input type="text" class="mt-4" id="description">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4" >Trending?</p>
+                        <input type="checkbox" class="mt-4 h-6 w-6" id="trending">
+                    </div>
+                    
+                </div>
+                <div class="flex-1 flex flex-col">
+                    <div class="flex-1">
+                        <p class="mt-4">Trending #1</p>
+                        <input type="text" class="mt-4" id="trending-1">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4" >Trending #2</p>
+                        <input type="text" class="mt-4" id="trending-2">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4" >Trending #3</p>
+                        <input type="text" class="mt-4" id="trending-3">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4">Trending #4</p>
+                        <input type="text" class="mt-4" id="trending-4">
+                    </div>
+                    <div class="flex-1">
+                        <p class="mt-4">Trending #5</p>
+                        <input type="text" class="mt-4" id="trending-5">
+                    </div>
+                    <button class="flex bg-slate-800" onclick="writeDataBase()">Submit!</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="flex-1"></div>
+    </div>
+    <div class="flex-1"></div>
+  </div>
+
+
+</body>
+</html>
